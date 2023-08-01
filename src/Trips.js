@@ -6,18 +6,21 @@ export default function Trips() {
     <section className="grid grid-4-columns trips">
       <div className="trips--city">
         <ul>
+          <li>image</li>
           <li>Berlin</li>
           <li>Date</li>
         </ul>
       </div>
       <div className="trips--city">
         <ul>
+          <li>image</li>
           <li>Tokyo</li>
           <li>Date</li>
         </ul>
       </div>
       <div className="trips--city">
         <ul>
+          <li>image</li>
           <li>Barcelona</li>
           <li>Date</li>
         </ul>
