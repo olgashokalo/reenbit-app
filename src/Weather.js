@@ -9,5 +9,5 @@ export default function Weather() {
   let apiUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Paris/today?unitGroup=metric&include=days&key=${apiKey}&contentType=json`;
   axios.get(apiUrl).then(showWeather);
 
-  return <h1>He</h1>;
+  return <h1>Hello from Weather</h1>;
 }
