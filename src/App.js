@@ -1,11 +1,21 @@
 import "./App.css";
-import Weather from "./Weather";
+import Trips from "./Trips";
+import WeatherToday from "./WeatherToday";
 
 export default function App() {
   return (
     <>
-      <div className="App">Trip App</div>
-      <Weather />
+      <div className="App grid">
+        <div className="LeftSide grid">
+          <div className="container">
+            <h2>Weather Forecast</h2>
+            <Trips />
+          </div>
+        </div>
+        <div className="RightSide">
+          <WeatherToday />
+        </div>
+      </div>
     </>
   );
 }
