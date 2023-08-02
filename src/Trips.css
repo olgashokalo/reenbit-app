@@ -1,3 +1,33 @@
+:root {
+  --color-primary: #f1f4f8;
+}
+
+.Trips--SearchForm {
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding: 5px;
+  width: 250px;
+}
+.Trips--SearchForm .submitButton {
+  background-color: var(--color-primary);
+  border: none;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.Trips--SearchForm > input {
+  background-color: var(--color-primary);
+  border: none;
+  font-family: robotoregular;
+  font-size: 16px;
+  font-weight: 900;
+  outline: 0;
+  padding: 10px;
+}
+
 .trips--city {
   border: 1px solid lightgray;
 }
