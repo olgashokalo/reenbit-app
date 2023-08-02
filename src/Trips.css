@@ -1,7 +1,10 @@
-.grid-4-columns {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2rem;
-}
 .trips--city {
-  border: 1px solid red;
+  border: 1px solid lightgray;
+}
+
+.grid-4-columns {
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: max-content; */
+  gap: 1.5rem;
+  margin-right: 1rem;
 }

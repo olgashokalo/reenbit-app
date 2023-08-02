@@ -6,11 +6,9 @@ export default function App() {
   return (
     <>
       <div className="App grid">
-        <div className="LeftSide grid">
-          <div className="container">
-            <h2>Weather Forecast</h2>
-            <Trips />
-          </div>
+        <div className="LeftSide ">
+          <h2>Weather Forecast</h2>
+          <Trips />
         </div>
         <div className="RightSide">
           <WeatherToday />
