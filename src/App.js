@@ -11,7 +11,7 @@ export default function App() {
           <Trips />
         </div>
         <div className="RightSide">
-          <WeatherToday />
+          <WeatherToday defaultCity="Berlin" />
         </div>
       </div>
     </>
