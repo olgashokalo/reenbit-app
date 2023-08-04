@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDay from "./FormattedDay";
 import axios from "axios";
 import "./WeatherToday.css";
 
@@ -10,7 +11,7 @@ export default function WeatherToday(props) {
     setWeatherData({
       temperature: response.data.days[0].temp,
       city: response.data.address,
-      date: "Sunday",
+      date: new Date(response.data.days[0].datetimeEpoch * 1000),
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       description: response.data.days[0].conditions,
     });
@@ -22,7 +23,9 @@ export default function WeatherToday(props) {
     return (
       <div className="WeatherToday">
         <ul className="WeatherToday--Description">
-          <li className="WeatherToday--Day">{weatherData.date}</li>
+          <li className="WeatherToday--Day">
+            <FormattedDay date={weatherData.date} />
+          </li>
           <li className="WeatherToday--Temperature">
             {" "}
             <img
