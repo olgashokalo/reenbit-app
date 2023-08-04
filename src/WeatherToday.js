@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormattedDay from "./FormattedDay";
+import WeatherIcon from "./WeatherIcon";
 import axios from "axios";
 import "./WeatherToday.css";
 
@@ -12,7 +13,7 @@ export default function WeatherToday(props) {
       temperature: response.data.days[0].temp,
       city: response.data.address,
       date: new Date(response.data.days[0].datetimeEpoch * 1000),
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      icon: response.data.days[0].icon,
       description: response.data.days[0].conditions,
     });
 
@@ -28,11 +29,7 @@ export default function WeatherToday(props) {
           </li>
           <li className="WeatherToday--Temperature">
             {" "}
-            <img
-              className="WeatherToday--Icon"
-              src={weatherData.iconUrl}
-              alt={weatherData.description}
-            />
+            <WeatherIcon code={weatherData.icon} />
             <span className="WeatherToday-CurrentTemperature"></span>
             {Math.round(weatherData.temperature)}
             <span className="WeatherToday__Units"> ° C</span>

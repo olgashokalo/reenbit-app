@@ -17,7 +17,10 @@
   font-family: var(--font-primary);
   letter-spacing: 0.1rem;
 }
-
+.WeatherToday canvas {
+  margin-right: 10px;
+  /* display: inline-block; */
+}
 .WeatherToday--Temperature {
   /* font-weight: 200; */
   font-family: robotoregular;
