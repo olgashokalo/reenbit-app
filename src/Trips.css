@@ -28,13 +28,13 @@
   padding: 10px;
 }
 
-.trips--city {
+/* .trips--city {
   border: 1px solid lightgray;
 }
 
 .grid-4-columns {
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: max-content; */
-  gap: 1.5rem;
+/* gap: 1.5rem;
   margin-right: 1rem;
-}
+} */

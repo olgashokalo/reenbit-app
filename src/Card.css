@@ -1,0 +1,26 @@
+.card--container {
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #f1f4f8;
+  margin-right: 2.5rem;
+}
+
+.card--image {
+  max-width: 100%;
+}
+
+.card--city {
+  margin: 1rem 1rem 0.5rem;
+  font-family: robotoregular;
+}
+
+.card--date {
+  margin: 0 1rem 1rem;
+  font-family: sans-serif;
+  opacity: 0.5;
+}
+
+.cards {
+  display: flex;
+}
