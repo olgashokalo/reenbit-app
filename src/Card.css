@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .card--container {
   width: 12rem;
   display: flex;
@@ -23,4 +27,12 @@
 
 .cards {
   display: flex;
+}
+
+.addTripButton {
+  background-color: #f1f4f8;
+  height: 100%;
+  border: none;
+  font-family: robotoregular;
+  font-size: 1.2rem;
 }
