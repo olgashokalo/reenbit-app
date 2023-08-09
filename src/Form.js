@@ -13,7 +13,6 @@ const Form = () => {
         <label htmlFor="city" className="form-label">
           <sup>*</sup>City
         </label>
-
         <input
           {...register("name")}
           id="country"
@@ -30,7 +29,7 @@ const Form = () => {
         <input
           {...register("start")}
           id="start-date"
-          type="text"
+          type=""
           className="form-control"
           placeholder="Select date"
         />
@@ -40,7 +39,6 @@ const Form = () => {
         <label htmlFor="endDate" className="form-label">
           <sup>*</sup>End date
         </label>
-
         <input
           {...register("end")}
           id="endDate"
