@@ -15,11 +15,6 @@ export default function Card(props) {
         <h3 className="card--city">{props.city}</h3>
         <p className="card--date"> {props.date}</p>
       </div>
-      <div className="card--container">
-        <div className="addTripButton">
-          <Modal />
-        </div>
-      </div>
     </div>
   );
 }
