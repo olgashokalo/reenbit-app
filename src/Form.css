@@ -1,0 +1,47 @@
+hr {
+  opacity: 20%;
+}
+
+.form-control {
+  /* flex-direction: column; */
+  border: 1px solid #dddee1;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  height: 40px;
+  margin: 5px 28px;
+  opacity: 0.6;
+  padding-left: 10px;
+  width: 90%;
+}
+
+.form-label {
+  /* margin-bottom: 5px; */
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-left: 28px;
+}
+.formButtons {
+  margin-right: 10px;
+  text-align: right;
+}
+.formSaveButton,
+.formCancelButton {
+  background: none;
+  border: 1px solid #dddee1;
+  margin: 20px 5px;
+  padding: 10px 15px;
+}
+
+.formSaveButton {
+  background-color: #1890ff;
+  border: none;
+  color: white;
+}
+.city--input {
+  margin-top: 60px;
+}
+.endDate--input {
+  margin-bottom: 80px;
+}

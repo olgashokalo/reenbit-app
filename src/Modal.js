@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Modal.css";
+import Form from "./Form";
 
 export default function Modal() {
   const [modal, setModal] = useState(false);
@@ -22,8 +23,9 @@ export default function Modal() {
             {" "}
           </div>
           <div className="modal--content">
-            <h2>Create trip</h2>
-            <p> Here has to be a form </p>
+            <p className="modal--content__description">Create trip</p>
+            <hr />
+            <Form />
             <button className="close--modal" onClick={toggleModal}>
               &times;
             </button>
