@@ -13,8 +13,8 @@ export default function App(props) {
           <h2>Weather Forecast</h2>
           <Trips />
           <ul>
-            {trips.map(function (trip) {
-              return <Card city={trip.city} date={trip.date} />;
+            {trips.map(function (trip, id) {
+              return <Card city={trip.city} date={trip.date} key={id} />;
             })}
           </ul>
         </div>
