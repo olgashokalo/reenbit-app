@@ -4,6 +4,7 @@ import Trips from "./Trips";
 import Card from "./Card";
 import "./Card.css";
 import WeatherToday from "./WeatherToday";
+import WeatherForecast from "./WeatherForecast";
 
 export default function App(props) {
   const [trips, setTrips] = useState([{ city: "Berlin", date: "08.08.2023" }]);
@@ -21,6 +22,7 @@ export default function App(props) {
               return <Card city={trip.city} date={trip.date} key={id} />;
             })}
           </ul>
+          <WeatherForecast />
         </div>
         <div className="RightSide">
           <WeatherToday defaultCity="Berlin" info={setTrips} />

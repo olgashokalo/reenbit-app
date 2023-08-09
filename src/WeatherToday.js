@@ -29,7 +29,7 @@ export default function WeatherToday(props) {
           </li>
           <li className="WeatherToday--Temperature">
             {" "}
-            <WeatherIcon code={weatherData.icon} />
+            <WeatherIcon code={weatherData.icon} color="white" size={65} />
             <span className="WeatherToday-CurrentTemperature"></span>
             {Math.round(weatherData.temperature)}
             <span className="WeatherToday__Units"> ° C</span>
@@ -62,7 +62,7 @@ export default function WeatherToday(props) {
       </div>
     );
   } else {
-    const apiKey = "SDTHMTWESYKMGM942D2WJ5VV3";
+    const apiKey = "THXGMMHC5CEQHDUKLJ2PK3XPF";
 
     let apiUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${props.defaultCity}/today?unitGroup=metric&include=days&key=${apiKey}&contentType=json`;
     axios.get(apiUrl).then(showWeather);
