@@ -1,7 +1,13 @@
-.WeatherForecast {
-  margin-top: 4rem;
-
+.WeatheForecastDay {
+  width: 10%;
+  padding-right: 10px;
+}
+.WeatherContent {
+  float: left;
   font-family: sans-serif;
+  margin-right: 1.5rem;
+  margin-top: 4rem;
+  width: 10%;
 }
 
 .WeatherForecast--Day {
@@ -14,15 +20,8 @@
 }
 
 .WeatherForecast--Week {
-  margin-top: 3rem;
-
-  font-size: 20px;
-  opacity: 0.8;
   font-family: robotoregular;
-}
-.WeatherForecastDay {
-  display: flex;
-}
-.WeatherForecast {
-  flex: 1;
+  font-size: 20px;
+  margin-top: 3rem;
+  opacity: 0.8;
 }
