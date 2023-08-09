@@ -1,6 +1,5 @@
 import React from "react";
 import "./Card.css";
-import Modal from "./Modal";
 
 export default function Card(props) {
   return (
