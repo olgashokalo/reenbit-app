@@ -3,7 +3,6 @@ hr {
 }
 
 .form-control {
-  /* flex-direction: column; */
   border: 1px solid #dddee1;
   display: flex;
   font-family: sans-serif;
@@ -17,7 +16,6 @@ hr {
 }
 
 .form-label {
-  /* margin-bottom: 5px; */
   font-family: sans-serif;
   font-size: 15px;
   padding-left: 28px;
