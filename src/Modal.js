@@ -12,8 +12,8 @@ export default function Modal() {
   return (
     <>
       <button className="btn--modal" onClick={toggleModal}>
-        <p>+ </p>
-        <br />
+        <p> + </p>
+
         <p>Add trip</p>
       </button>
 

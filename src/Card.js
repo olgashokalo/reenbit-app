@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import Modal from "./Modal";
 
 export default function Card(props) {
   return (
@@ -13,6 +14,11 @@ export default function Card(props) {
         />
         <h3 className="card--city">{props.city}</h3>
         <p className="card--date"> {props.date}</p>
+      </div>
+      <div className="card--container">
+        <div className="addTripButton">
+          <Modal />
+        </div>
       </div>
     </div>
   );
